@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     domain="dev-bsmubq3cydadzuu8.us.auth0.com"
     clientId="Sv1LFvvT8HegmIk4WHMTXC71HJtuyCGa"
     authorizationParams={{
-      redirect_uri: window.location.origin
+      redirect_uri: "https://real-state-client-flax.vercel.app"
     }}
     audience={window.location.origin}
     scope="openid profile email"
