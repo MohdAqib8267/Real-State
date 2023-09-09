@@ -1,5 +1,6 @@
 import React from 'react'
 import { HiLocationMarker } from 'react-icons/hi'
+import './SearchBar.css';
 
 const SearchBar = ({filter,setFilter}) => {
   return (
