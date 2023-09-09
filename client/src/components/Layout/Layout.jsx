@@ -13,7 +13,7 @@ import useBookings from '../../hooks/useBookings';
 const Layout = () => {
   useFavorite();
   useBookings();
-  const { isAuthenticated, user, getAccessTokenWithPopup } = useAuth0();
+  const { isAuthenticated, user, getAccessTokenSilently } = useAuth0();
   // console.log(user);
   const {setUserDetails} = useContext(userDetailContext);
 
@@ -26,7 +26,7 @@ const Layout = () => {
     const getTokenAndRegsiter = async () => {
 
       try {
-        const res = await getAccessTokenWithPopup({
+        const res = await getAccessTokenSilently({
         authorizationParams: {
           audience: "http://localhost:8000",
           scope: "openid profile email",
